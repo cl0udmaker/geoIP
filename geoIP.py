@@ -16,7 +16,7 @@ import httplib, json, requests, xmltodict #urllib, base64
 # method to parse JSON object from VT ipaddress api
 def vtIP(ip):
     try: 
-        params = {'ip': ip, 'apikey': '3b56547d780fd9112d729d4d20081d259d4fd7c00cdb9edba9024241ba5bb05c' }
+        params = {'ip': ip, 'apikey': 'APIKEY' }
         url = 'https://www.virustotal.com/vtapi/v2/ip-address/report'
         response = requests.get(url, params = params)
         response_json = response.json()
