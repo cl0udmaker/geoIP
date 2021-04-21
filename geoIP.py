@@ -37,7 +37,7 @@ def format_vtIP(out_vt):
 
 # method to parse JSON object from interflow geoIP api
 def geoIP(ip):
-    headers = {'Ocp-Apim-Subscription-Key': '3a03010c43a940d1aea0579e443eb219'}
+    headers = {'Ocp-Apim-Subscription-Key': 'AzureKey'}
     try:
         conn = httplib.HTTPSConnection('interflowinternal.azure-api.net')
         conn.request('GET', '/geoip/ipinfo/%s' % ip, '{body}', headers)
